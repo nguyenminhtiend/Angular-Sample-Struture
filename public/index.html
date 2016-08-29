@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="main.module" style="padding-top: 70px;">
+<div ng-include="'./app/partials/header.html'"></div>
+<div class="container">
+    <div ng-view></div>
+</div>
+</body>
+<!--Start Library-->
+<script src="./angular/angular.js"></script>
+<script src="./angular-route/angular-route.js"></script>
+<script src="./angular-bootstrap/ui-bootstrap.js"></script>
+<!--End Library-->
+
+<!--Start App-->
+<script src="./app/app.js"></script>
+<script src="./app/components/customer/customer.module.js"></script>
+<!--End App-->
+</html>
